@@ -6,11 +6,10 @@ import Task from './Task';
 class TasksList extends Component {
 	static propTypes = {
 		tasks: PropTypes.array.isRequired,
-		editTask: PropTypes.func.isRequired,
 	};
 
 	render() {
-		const { tasks, editTask: edit } = this.props;
+		const { tasks } = this.props;
 		return (
 			<div className="mb-5">
 				<ul className="list-group">
